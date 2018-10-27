@@ -1,0 +1,157 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:cropToPadding="false"
+                android:scaleType="fitStart"
+                android:src="@drawable/bros" />
+
+            <TextView
+                android:id="@+id/tech_bro_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="Tech Bro Calculator"
+                android:background="#002fff"
+                android:textColor="#ffff00"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:gravity="center"
+
+            android:text='Number of vests you own:'
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/vest_amount"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:hint='100'
+            android:inputType="phone"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:gravity="center"
+
+            android:text='How many of those vests listed above have a brand on them, bro?'
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/branded_vest_amount"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint='100'
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="#FF0000"
+            android:gravity="center"
+            android:text="Fleece or puffy?"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/vest_type_radio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_fleece"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fleece" />
+
+            <RadioButton
+                android:id="@+id/radio_puffy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Puffy" />
+
+            <RadioButton
+                android:id="@+id/radio_both"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Both" />
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FF0000"
+            android:gravity="center"
+
+            android:text='Amount of branded backpacks you sport:'
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/backpack_amount"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:inputType="number"
+            android:hint='100'
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/submitButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text="Score Me!" />
+
+
+    </LinearLayout>
+
+</ScrollView>
